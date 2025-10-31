@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MenuPage from "../../pages/MenuPage";
 
-export default function Categories({ categories }) {
+export default function Categories({ navigate, categories }) {
    const [selectedCategory, setSelectedCategory] = useState(1);
 
    return (
@@ -37,7 +37,7 @@ export default function Categories({ categories }) {
          </div>
 
 
-         {selectedCategory && <MenuPage categoryId={selectedCategory} />}
+         {selectedCategory && <MenuPage navigate={navigate} categoryId={selectedCategory} />}
       </div>
    );
 }

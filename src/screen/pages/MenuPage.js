@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import BottomCart from "./components/BottomCart";
 
-export default function MenuPage({ categoryId }) {
+export default function MenuPage({ navigate, categoryId }) {
    const { addToCart } = useContext(CartContext);
 
    const allMenus = {
@@ -103,7 +103,7 @@ export default function MenuPage({ categoryId }) {
                zIndex: 999,
             }}
          >
-            <BottomCart />
+            <BottomCart navigate={navigate}/>
          </div>
       </div>
    );
