@@ -1,0 +1,64 @@
+/* ประกาศสีแดงเป็น CSS Variables */
+:root {
+  /* สีหลัก */
+  --primary: #000000;        /* น้ำเงินเข้ม สำหรับปุ่มหลัก หรือ header */
+  --primary-light: #63A4FF;  /* น้ำเงินอ่อน สำหรับ hover หรือ background ปุ่ม */
+  --primary-dark: #004BA0;   /* น้ำเงินเข้มพิเศษ สำหรับ active state */
+
+  /* สีรอง */
+  --secondary: #2196F3;      /* น้ำเงินสด ใช้สำหรับ highlight หรือ badge */
+  --secondary-light: #6EC6FF; /* อ่อนลง ใช้ hover */
+  --secondary-dark: #0069C0;  /* ใช้ text หรือ border */
+
+  /* Background */
+  --background: #fff;     /* พื้นหลังอ่อน ๆ สีฟ้า very light */
+  --surface: #BBDEFB;        /* การ์ด หรือ section background */
+
+  /* Text */
+  --text-primary: #0D47A1;   /* ข้อความหลักน้ำเงินเข้ม */
+  --text-secondary: #1976D2; /* ข้อความรอง */
+
+  /* Alert / Status */
+  --error: #D32F2F;          /* ข้อความผิดพลาด */
+  --warning: #F57C00;        /* warning สีส้ม */
+  --success: #388E3C;        /* success สีเขียว */
+  --info: #0288D1;           /* info สีฟ้าอ่อน */
+
+  /* Border / Divider */
+  --border: #90CAF9;         /* สีขอบ หรือ divider */
+
+  /* ตัวช่วยเพิ่มเติม */
+  --white: #fff;
+  --hover: #63A4FF;          /* สี hover ปุ่ม */
+}
+
+.home-container {
+  min-height: 100vh;
+  background: var(--background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 900px;
+  height: 250px;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: left;
+  padding-left: 5px;
+}
