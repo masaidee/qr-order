@@ -13,7 +13,7 @@ export default function TopBar({ title }) {
 
    return (
       <div className="topbar">
-         <div style={{ width: 50 }}>
+         <div style={{ width: 50, height: 20 }}>
             <HamburgerMenu items={menuItems} title={title} />
          </div>
 
