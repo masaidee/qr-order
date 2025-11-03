@@ -46,7 +46,7 @@ return (
          style={{
             position: "fixed",
             top: 0,
-            left: open ? 0 : "-450px",
+            left: open ? 0 : "-1000px",
             width: "30%",
             height: "100%",
             background: "#fff",
